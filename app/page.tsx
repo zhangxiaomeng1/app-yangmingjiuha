@@ -15,7 +15,7 @@ const links = [
   },
   {
     label: "托管平台",
-    value: "Cloudflare Pages",
+    value: "Cloudflare Worker",
     note: "边缘网络 · HTTPS · CDN",
     href: "https://www.cloudflare.com",
     tone: "orange",
@@ -38,8 +38,8 @@ export default function Home() {
           <p className="eyebrow"><span>01</span> DIGITAL HOME · APPLE NODE</p>
           <h1>把主站的秩序，<br /><em>延伸到 Apple。</em></h1>
           <p className="hero-lede">
-            这是 <strong>apple.yangmingjiuha.xyz</strong> 的独立静态页面。
-            主域名继续留在 GitHub Pages，Apple 子域名由 Cloudflare Pages 独立托管。
+            这是 <strong>app.yangmingjiuha.xyz</strong> 的独立页面。
+            主域名继续留在 GitHub Pages，App 子域名由 Cloudflare Worker 独立托管。
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="https://yangmingjiuha.xyz">访问主站 <span>↗</span></a>
@@ -49,14 +49,14 @@ export default function Home() {
         <div className="hero-art" aria-label="Apple 子域名结构示意图">
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
-          <div className="art-core"><span>apple</span><small>yangmingjiuha.xyz</small></div>
+          <div className="art-core"><span>app</span><small>yangmingjiuha.xyz</small></div>
           <span className="art-label art-label-top">CLOUDFLARE<br /><b>EDGE</b></span>
           <span className="art-label art-label-bottom">STATIC<br /><b>PAGE</b></span>
         </div>
       </section>
 
       <section className="signal-strip section-frame" aria-label="页面状态">
-        <div><span className="strip-label">当前节点</span><strong>apple.yangmingjiuha.xyz</strong></div>
+        <div><span className="strip-label">当前节点</span><strong>app.yangmingjiuha.xyz</strong></div>
         <div><span className="strip-label">内容形态</span><strong>独立静态页</strong></div>
         <div><span className="strip-label">连接状态</span><strong className="live"><span className="status-dot" /> READY</strong></div>
       </section>
@@ -80,7 +80,7 @@ export default function Home() {
       <section className="flow section-frame" aria-label="域名关系">
         <div className="flow-node"><span className="node-index">A</span><div><small>主域名</small><strong>yangmingjiuha.xyz</strong></div></div>
         <span className="flow-line" aria-hidden="true">→</span>
-        <div className="flow-node active"><span className="node-index">⌁</span><div><small>Cloudflare Pages</small><strong>apple.yangmingjiuha.xyz</strong></div></div>
+        <div className="flow-node active"><span className="node-index">⌁</span><div><small>Cloudflare Worker</small><strong>app.yangmingjiuha.xyz</strong></div></div>
         <span className="flow-line" aria-hidden="true">→</span>
         <div className="flow-node"><span className="node-index">G</span><div><small>源码参考</small><strong>GitHub</strong></div></div>
       </section>
