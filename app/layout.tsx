@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Apple · Yangming Technology",
+  title: "APP · Yangming Technology",
   description: "yangmingjiuha.xyz 的独立应用子域名。",
   icons: {
     icon: "/favicon.svg",

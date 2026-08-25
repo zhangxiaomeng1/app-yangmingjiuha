@@ -30,23 +30,23 @@ export default function Home() {
           <span className="brand-mark" aria-hidden="true">A</span>
           <span>YANGMING</span>
         </a>
-        <span className="topbar-status"><span className="status-dot" /> Apple 子域名</span>
+        <span className="topbar-status"><span className="status-dot" /> APP 子域名</span>
       </nav>
 
       <section className="hero section-frame">
         <div className="hero-copy">
-          <p className="eyebrow"><span>01</span> DIGITAL HOME · APPLE NODE</p>
-          <h1>把主站的秩序，<br /><em>延伸到 Apple。</em></h1>
+          <p className="eyebrow"><span>01</span> DIGITAL HOME · APP NODE</p>
+          <h1>把主站的秩序，<br /><em>延伸到 APP。</em></h1>
           <p className="hero-lede">
             这是 <strong>app.yangmingjiuha.xyz</strong> 的独立页面。
-            主域名继续留在 GitHub Pages，App 子域名由 Cloudflare Worker 独立托管。
+            主域名继续留在 GitHub Pages，APP 子域名由 Cloudflare Worker 独立托管。
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="https://yangmingjiuha.xyz">访问主站 <span>↗</span></a>
             <a className="button button-quiet" href="#relationship">查看关联关系 <span>↓</span></a>
           </div>
         </div>
-        <div className="hero-art" aria-label="Apple 子域名结构示意图">
+        <div className="hero-art" aria-label="APP 子域名结构示意图">
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
           <div className="art-core"><span>app</span><small>yangmingjiuha.xyz</small></div>
