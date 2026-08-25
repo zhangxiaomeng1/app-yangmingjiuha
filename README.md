@@ -5,6 +5,8 @@
 本仓库是 `app.yangmingjiuha.xyz` 的独立站点源码，和主域名
 `yangmingjiuha.xyz` 使用不同的仓库与部署配置。
 
+当前 Cloudflare Worker：`app-yangmingjiuha-worker`
+
 源码目录：
 
 - `app/`：页面与样式
