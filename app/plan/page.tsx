@@ -1,4 +1,4 @@
-import Link from "next/link";
+/* eslint-disable @next/next/no-html-link-for-pages */
 import { SiteChrome, Eyebrow } from "../components/site-chrome";
 
 const phases = [
@@ -13,7 +13,7 @@ export default function PlanPage() {
   return <SiteChrome>
     <section className="page-intro section-frame"><Eyebrow number="01">IMPLEMENTATION PLAN · ONE PERSON SYSTEM</Eyebrow><h1>先形成信任，<br /><em>再形成交易。</em></h1><p>这不是把所有事情一起做，而是让人生档案、自媒体 IP、课程和作品按先后关系连接起来。</p></section>
     <section className="plan-list section-frame">{phases.map(([number, title, text, output]) => <article className="plan-row" key={number}><span className="plan-number">{number}</span><div><h2>{title}</h2><p>{text}</p><strong>{output}</strong></div></article>)}</section>
-    <section className="plan-map section-frame"><div><Eyebrow number="02">THE LOOP</Eyebrow><h2>经历 → 口播 → 教程<br /><em>→ 作品 → 商业化</em></h2></div><div className="plan-links"><Link href="/story"><span>起点</span><strong>人生档案 ↗</strong></Link><Link href="/media"><span>传播</span><strong>自媒体 IP ↗</strong></Link><Link href="/courses"><span>交付</span><strong>课程方向 ↗</strong></Link><Link href="/works"><span>证据</span><strong>9 款作品 ↗</strong></Link></div></section>
+    <section className="plan-map section-frame"><div><Eyebrow number="02">THE LOOP</Eyebrow><h2>经历 → 口播 → 教程<br /><em>→ 作品 → 商业化</em></h2></div><div className="plan-links"><a href="/story"><span>起点</span><strong>人生档案 ↗</strong></a><a href="/media"><span>传播</span><strong>自媒体 IP ↗</strong></a><a href="/courses"><span>交付</span><strong>课程方向 ↗</strong></a><a href="/works"><span>证据</span><strong>9 款作品 ↗</strong></a></div></section>
     <section className="note-band section-frame">当前阶段只做验证，不承诺收入目标；DeepSeek API 继续保留给未来服务端接口，不放进这一版网站。</section>
   </SiteChrome>;
 }
