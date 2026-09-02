@@ -1,5 +1,25 @@
 # vinext-starter
 
+## APP 子域站点
+
+本仓库是 `app.yangmingjiuha.xyz` 的独立站点源码，和主域名
+`yangmingjiuha.xyz` 使用不同的仓库与部署配置。
+
+当前 Cloudflare Worker：`app-yangmingjiuha-worker`
+
+源码目录：
+
+- `app/`：页面与样式
+- `public/`：静态资源
+- `worker/`、`vite.config.ts`：Cloudflare/Vinext 构建配置
+
+本地验证：
+
+```bash
+npm install
+npm run build
+```
+
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
 Drizzle support.
