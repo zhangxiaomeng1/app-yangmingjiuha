@@ -14,14 +14,14 @@ test("homepage exposes the IP, courses, media and works archive", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /<title>张晓檬｜个人IP、AI课程与9款作品<\/title>/i);
-  for (const marker of ["人生实践记录者", "课程筹备中", "自媒体不是广告位", "9 款作品", "FocusLock", "DuoCue", "/courses/ai-agent-workflow", "/media", "/story"]) {
+  for (const marker of ["人生实践记录者", "课程筹备中", "自媒体不是广告位", "9 款作品", "FocusLock", "DuoCue", "/courses/ai-agent-workflow", "/media", "/story", "/works", "/plan", "查看实施计划"]) {
     assert.match(html, new RegExp(marker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
 });
 
 test("all public content routes server-render", async () => {
-  for (const path of ["/courses", "/courses/ai-agent-workflow", "/media", "/story"]) {
+  for (const path of ["/courses", "/courses/ai-agent-workflow", "/media", "/story", "/works", "/plan"]) {
     const response = await render(path);
     assert.equal(response.status, 200, path);
     const html = await response.text();

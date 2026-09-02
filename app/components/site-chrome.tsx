@@ -11,9 +11,10 @@ export function SiteChrome({ children }: { children: ReactNode }) {
         </Link>
         <nav className="nav-links" aria-label="主导航">
           <Link href="/courses">课程</Link>
-          <a href="/media">自媒体 IP</a>
+          <Link href="/media">自媒体 IP</Link>
           <Link href="/story">人生档案</Link>
-          <Link href="/#works">作品</Link>
+          <Link href="/works">作品</Link>
+          <Link href="/plan">实施计划</Link>
           <a href="https://yangmingjiuha.xyz" target="_blank" rel="noreferrer">公司主站 ↗</a>
         </nav>
       </header>

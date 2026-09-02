@@ -84,10 +84,3 @@ export const works = [
   { index: "08", name: "X Autonomy Countdown", type: "Mac · 专注工具", description: "常驻菜单栏的倒计时，把一个当下任务清楚地放在眼前。", href: "https://apps.apple.com/us/app/x%E8%87%AA%E4%B8%BB%E5%80%92%E8%AE%A1%E6%97%B6/id6504705716?mt=12", accent: "grey" },
   { index: "09", name: "DuoCue · 双拍", type: "iPhone · 创作者工具", description: "同时记录前后摄像头，让表达、提词和创作过程更自然。", href: "https://github.com/zhangxiaomeng1/DualCamCreator", accent: "violet" },
 ];
-
-export const references = [
-  { title: "橙皮书 · 花叔", note: "从真实产品和内容实践长出的系列教程", href: "https://www.huasheng.ai/orange-books/" },
-  { title: "Codex How To", note: "把智能体放进可验证的工程循环", href: "https://github.com/Phelan164/codex-howto" },
-  { title: "AI-Code-Tutorials", note: "从零基础到进阶的分层课程与实战项目", href: "https://github.com/0xfnzero/AI-Code-Tutorials" },
-  { title: "WorkBuddy 官方指南", note: "文件处理、网站开发与自媒体运营案例", href: "https://www.codebuddy.ai/docs/zh/workbuddy/Quickstart" },
-];
