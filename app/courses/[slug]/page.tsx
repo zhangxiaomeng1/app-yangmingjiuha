@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { SiteChrome, Eyebrow } from "../../components/site-chrome";
 import { courses } from "../../lib/content";
 
@@ -16,7 +16,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
         <h1>{course.title}<br /><em>{course.shortTitle}</em></h1>
         <p className="course-audience">适合：{course.audience}</p>
         <p>{course.promise}</p>
-        <Link className="button button-primary" href="/courses">返回课程总览 <span aria-hidden="true">↗</span></Link>
+        <a className="button button-primary" href="/courses">返回课程总览 <span aria-hidden="true">↗</span></a>
       </section>
       <section className="detail-grid section-frame">
         <div><Eyebrow number="A">MODULES</Eyebrow><h2>会一起走过的<br /><em>几个动作。</em></h2></div>

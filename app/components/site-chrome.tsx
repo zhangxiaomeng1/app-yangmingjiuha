@@ -1,20 +1,20 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import type { ReactNode } from "react";
-import Link from "next/link";
 
 export function SiteChrome({ children }: { children: ReactNode }) {
   return (
     <main className="site-shell">
       <header className="topbar">
-        <Link className="brand" href="/" aria-label="张晓檬个人实践首页">
+        <a className="brand" href="/" aria-label="张晓檬个人实践首页">
           <span className="brand-mark" aria-hidden="true">张</span>
           <span>张晓檬 / YANGMING</span>
-        </Link>
+        </a>
         <nav className="nav-links" aria-label="主导航">
-          <Link href="/courses">课程</Link>
-          <Link href="/media">自媒体 IP</Link>
-          <Link href="/story">人生档案</Link>
-          <Link href="/works">作品</Link>
-          <Link href="/plan">实施计划</Link>
+          <a href="/courses">课程</a>
+          <a href="/media">自媒体 IP</a>
+          <a href="/story">人生档案</a>
+          <a href="/works">作品</a>
+          <a href="/plan">实施计划</a>
           <a href="https://yangmingjiuha.xyz" target="_blank" rel="noreferrer">公司主站 ↗</a>
         </nav>
       </header>
