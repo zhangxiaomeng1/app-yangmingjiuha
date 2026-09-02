@@ -73,6 +73,50 @@ export const mediaTracks = [
   { slug: "indie-builder", number: "03", title: "复盘｜一个人把产品推到下一步", text: "公开9款作品的选择、取舍、上线、定价与没有解决的问题。", format: "案例拆解 · 连载" },
 ];
 
+export const ipPlan = {
+  title: "张晓檬主动设计人生·长期个人 IP 计划",
+  subtitle: "用真实经历做母题，用口播建立信任，用课程和作品承接价值。",
+  identity: "人生实践记录者 · AI 产品独立开发者 · 一人公司实践者",
+  source: "飞书多维表格分析记录 · 2026 年 7 月",
+  pillars: [
+    { title: "主动设计人生", text: "讲选择、注意力、时间自由、职业尊严和长期行动，把人生观落到具体经历。" },
+    { title: "AI 帮我做事", text: "用 WorkBuddy、Codex、豆包和 ChatGPT 演示从问题到交付的真实过程。" },
+    { title: "一人公司与产品", text: "公开 9 款作品、FocusLock 和公司实践，讲清取舍、验证、上线与复盘。" },
+  ],
+  phases: [
+    ["01", "建立识别度", "固定一句定位、三条内容线和统一口播结构，让陌生人知道为什么关注。"],
+    ["02", "做口播样本", "先做 9 条同一定位的不同角度，比较完播、互动、关注和评论质量，不承诺爆款。"],
+    ["03", "沉淀教程", "把高质量评论和真实项目整理成 WorkBuddy、Codex、豆包的分层教程。"],
+    ["04", "连接作品", "让内容自然进入 9 款作品、FocusLock 和公司网站，形成可验证的产品证据。"],
+    ["05", "验证商业化", "需求稳定后再选择课程、陪跑、服务或订阅中的一个主入口。"],
+  ],
+};
+
+export const benchmarkAccount = {
+  name: "胡楚靓",
+  douyinId: "7124467",
+  followers: "889.2 万",
+  works: "1094 条",
+  likes: "1.91 亿",
+  avgLikes: "17.5 万 / 条",
+  aiAvgLikes: "36.7 万 / 条",
+  track: "生活 / 自媒体干货 / 美妆；AI 工具为新增垂类",
+  profileHref: "https://www.douyin.com/search/胡楚靓?type=user",
+  dataHref: "https://dy.feigua.cn/bloggeropen/35715B3AD4E12361",
+};
+
+export const benchmarkVideos = [
+  { number: "01", title: "如何用AI做自己的专属工作台（首条爆款）", category: "效果展示种草", tool: "WorkBuddy、Vibe coding", views: "4100 万", likes: "82.5 万", saves: "66.5 万", comments: "1.1 万", shares: "26.6 万", href: "https://www.douyin.com/search/胡楚靓 AI工作台?type=video" },
+  { number: "02", title: "AI工作台保姆级制作教程", category: "实操教程", tool: "WorkBuddy", views: "900 万", likes: "18.2 万", saves: "21.4 万", comments: "4200", shares: "7.3 万", href: "https://www.douyin.com/search/胡楚靓 AI工作台?type=video" },
+  { number: "03", title: "网友AI工作台作业合集展示", category: "案例互动", tool: "WorkBuddy", views: "470 万", likes: "9.5 万", saves: "8.7 万", comments: "1800", shares: "2.1 万", href: "https://www.douyin.com/search/胡楚靓 AI工作台?type=video" },
+];
+
+export const categoryComparison = [
+  { category: "效果展示种草类", avgLikes: "82.5 万", purpose: "拉流量、破圈传播", saveRatio: "80.6%" },
+  { category: "实操教程类", avgLikes: "18.2 万", purpose: "涨粉、留用户、建立专业度", saveRatio: "117.6%" },
+  { category: "案例互动类", avgLikes: "9.5 万", purpose: "促互动、拉长话题周期", saveRatio: "91.6%" },
+];
+
 export const works = [
   { index: "01", name: "DeepCleanup", type: "iPhone · AI 工具", description: "从重复照片、截图和大视频开始，把混乱的相册变成可以重新掌控的空间。", href: "https://apps.apple.com/us/app/deepcleanup-photo-cleaner/id6777354576", accent: "lavender" },
   { index: "02", name: "DeepCleanup for Mac", type: "Mac · AI 工具", description: "把同一套清理体验延伸到桌面，继续解决数字生活里的冗余。", href: "https://apps.apple.com/us/app/deepcleanup/id6777946333?mt=12", accent: "sand" },
