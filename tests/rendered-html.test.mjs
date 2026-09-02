@@ -17,6 +17,8 @@ test("homepage exposes the IP, courses, media and works archive", async () => {
   for (const marker of ["人生实践记录者", "课程筹备中", "自媒体不是广告位", "9 款作品", "FocusLock", "DuoCue", "/courses/ai-agent-workflow", "/media", "/story", "/works", "/plan", "查看实施计划"]) {
     assert.match(html, new RegExp(marker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
+  for (const href of ["/courses", "/media", "/story", "/works", "/plan"]) assert.match(html, new RegExp(`href="${href.replace("/", "\\/")}"`));
+  assert.doesNotMatch(html, /REFERENCE SHELF|参考/);
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
 });
 
@@ -26,6 +28,8 @@ test("all public content routes server-render", async () => {
     assert.equal(response.status, 200, path);
     const html = await response.text();
     assert.match(html, /张晓檬/);
+    if (path === "/plan") assert.match(html, /张晓檬主动设计人生·长期个人 IP 计划/);
+    if (path === "/media") assert.match(html, /胡楚靓|889\.2 万|实操教程类/);
   }
 });
 
