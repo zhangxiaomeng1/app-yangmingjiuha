@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Apple · Yangming Technology",
-  description: "yangmingjiuha.xyz 的 Apple 独立静态子域名。",
+  title: "张晓檬｜人生实践与9款作品",
+  description: "用 AI、产品和持续行动，主动设计自己的人生。张晓檬的个人实践与9款作品档案。",
+  metadataBase: new URL("https://app.yangmingjiuha.xyz"),
+  openGraph: {
+    title: "张晓檬｜人生实践与9款作品",
+    description: "用 AI、产品和持续行动，主动设计自己的人生。",
+    type: "website",
+    url: "https://app.yangmingjiuha.xyz",
+  },
+  twitter: {
+    card: "summary",
+    title: "张晓檬｜人生实践与9款作品",
+    description: "用 AI、产品和持续行动，主动设计自己的人生。",
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -28,9 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
