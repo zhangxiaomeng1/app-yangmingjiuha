@@ -10,6 +10,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
           <span>张晓檬 / YANGMING</span>
         </a>
         <nav className="nav-links" aria-label="主导航">
+          <a className="nav-workbench" href="/workbench">AI 工作台</a>
           <a href="/courses">课程</a>
           <a href="/media">自媒体 IP</a>
           <a href="/story">人生档案</a>
