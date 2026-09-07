@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./workbench/workbench.css";
+import "./street-entry.css";
 
 export const metadata: Metadata = {
   title: "张晓檬｜个人IP、AI课程与9款作品",
