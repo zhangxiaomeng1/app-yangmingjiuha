@@ -1,0 +1,2 @@
+export function blocked(x,z){const y=-z;return x< -2.40||x>2.46||y< -6.4||y>26.8||(x> -1.98&&x<.27&&y>-.35&&y<4.35);}
+export function step(position,yaw,forward,right,dt,speed=1.48){const mag=Math.hypot(forward,right)||1;const f=forward/mag,r=right/mag;const dx=(-Math.sin(yaw)*f+Math.cos(yaw)*r)*speed*dt,dz=(-Math.cos(yaw)*f-Math.sin(yaw)*r)*speed*dt;const x=blocked(position.x+dx,position.z)?position.x:position.x+dx;const z=blocked(x,position.z+dz)?position.z:position.z+dz;return {x,z};}
